@@ -20,8 +20,7 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - component-contribution ~=0.4.1
-    - equilibrator-cache ~=0.4.1
+    - component-contribution ~=0.4.2
     - pyparsing ~=2.4
     - python >=3.6
     - python-slugify ~=4.0
