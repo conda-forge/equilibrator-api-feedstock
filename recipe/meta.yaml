@@ -1,5 +1,5 @@
 {% set name = "equilibrator-api" %}
-{% set version = "0.4.4" %}
+{% set version = "0.4.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/equilibrator-api-{{ version }}.tar.gz
-  sha256: 3bd81794369c21672bfd9a13156219a89674ae713976d52a146e15f9cbc65e44
+  sha256: 86cbf26d65a6ec84cae89be9e733383e5858a203cd46d967c2cc2381e1e246c1
 
 build:
   number: 0
