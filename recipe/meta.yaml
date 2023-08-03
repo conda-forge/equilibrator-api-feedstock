@@ -18,12 +18,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.9
   run:
-    - equilibrator-cache ~=0.4.3
-    - component-contribution ~=0.4.4
+    - python >=3.9
+    - component-contribution ~=0.5.1
     - pyparsing ~=3.0
-    - python >=3.6
     - python-slugify ~=5.0
 
 test:
