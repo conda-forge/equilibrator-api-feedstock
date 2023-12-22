@@ -21,7 +21,8 @@ requirements:
     - python >=3.9
   run:
     - python >=3.9
-    - component-contribution ~=0.5.1
+    - component-contribution ~=0.5.2
+    - equilibrator-cache ~=0.5.4
     - pyparsing ~=3.0
     - python-slugify ~=5.0
 
