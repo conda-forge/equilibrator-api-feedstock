@@ -1,5 +1,5 @@
 {% set name = "equilibrator-api" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/equilibrator-api-{{ version }}.tar.gz
-  sha256: e0f340dadb11a6045ddffa6468ce58d5514bf34a0f17d8462b3888d83eb70529
+  sha256: 2e4f949e499abddd5d57ce11057be12c7a12f81889cafdb0a13223a375168feb
 
 build:
   number: 0
@@ -21,7 +21,8 @@ requirements:
     - python >=3.9
   run:
     - python >=3.9
-    - component-contribution ~=0.5.1
+    - component-contribution ~=0.5.2
+    - equilibrator-cache ~=0.5.4
     - pyparsing ~=3.0
     - python-slugify ~=5.0
 
