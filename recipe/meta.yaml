@@ -21,10 +21,10 @@ requirements:
     - python >=3.9
   run:
     - python >=3.9
-    - component-contribution ~=0.5.2
-    - equilibrator-cache ~=0.5.4
-    - pyparsing ~=3.0
-    - python-slugify ~=5.0
+    - pyparsing ~=3.1
+    - python-slugify ~=8.0
+    - equilibrator-cache ~=0.6.0
+    - component-contribution ~=0.6.0
 
 test:
   imports:
