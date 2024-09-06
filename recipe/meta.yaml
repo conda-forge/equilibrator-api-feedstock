@@ -17,13 +17,17 @@ build:
 
 requirements:
   host:
-    - pip
     - python >=3.9
+    - setuptools >=41
+    - setuptools-scm
+    - wheel
+    - setuptools-git-versioning >=2.0,<3
+    - pip
   run:
     - python >=3.9
     - pyparsing ~=3.1
     - python-slugify ~=8.0
-    - equilibrator-cache ~=0.6.0
+    - equilibrator-cache ~=0.6.1
     - component-contribution ~=0.6.0
 
 test:
