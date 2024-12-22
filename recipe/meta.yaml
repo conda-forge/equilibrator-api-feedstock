@@ -7,24 +7,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/equilibrator-api-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/equilibrator-api-{{ version }}.tar.gz
   sha256: 7c1d0a2029b0e07f10956f61df191768409729152eb570bb77a9d8ed946a822d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools >=41
     - setuptools-scm
     - wheel
     - setuptools-git-versioning >=2.0,<3
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - pyparsing ~=3.1
     - python-slugify ~=8.0
     - equilibrator-cache ~=0.6.1
@@ -37,6 +37,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://gitlab.com/equilibrator/equilibrator-api
