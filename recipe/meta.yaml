@@ -1,5 +1,6 @@
 {% set name = "equilibrator-api" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
+{% set python_min = "3.11" %}
 
 
 package:
@@ -7,11 +8,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/equilibrator-api-{{ version }}.tar.gz
-  sha256: 7c1d0a2029b0e07f10956f61df191768409729152eb570bb77a9d8ed946a822d
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 65f8cacc1ee6a54e22ef1b6149d26394468bd1a8a0e5dc4aff2b79300ce3f49b
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps
 
@@ -25,10 +26,9 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - pyparsing ~=3.1
+    - pyparsing ~=3.3
     - python-slugify ~=8.0
-    - equilibrator-cache ~=0.6.1
-    - component-contribution ~=0.6.0
+    - component-contribution ~=0.7.0
 
 test:
   imports:
