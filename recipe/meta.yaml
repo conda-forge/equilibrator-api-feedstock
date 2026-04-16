@@ -1,5 +1,6 @@
 {% set name = "equilibrator-api" %}
 {% set version = "0.7.0" %}
+{% set python_min = "3.11" %}
 
 
 package:
@@ -25,10 +26,9 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - pyparsing ~=3.1
+    - pyparsing ~=3.3
     - python-slugify ~=8.0
-    - equilibrator-cache ~=0.6.1
-    - component-contribution ~=0.6.0
+    - component-contribution ~=0.7.0
 
 test:
   imports:
