@@ -1,5 +1,5 @@
 {% set name = "equilibrator-api" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.1" %}
 {% set python_min = "3.11" %}
 
 
@@ -8,8 +8,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 65f8cacc1ee6a54e22ef1b6149d26394468bd1a8a0e5dc4aff2b79300ce3f49b
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 7bedd90dff3772c1ba0b80106593737f292971d091c3e28ad493f7c74ba5a923
 
 build:
   number: 0
